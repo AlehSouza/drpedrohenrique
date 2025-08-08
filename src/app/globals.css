@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+/* MOCK */
+* {
+  font-family: "Roboto", sans-serif !important;
+  font-optical-sizing: auto;
+}
+
+/* .roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+ 
+/* ^ REMOVER DPS */
+
+:root {
+  --a: #e4e4e4;
+  --b: #adc2b0;
+  --c: #56a49e;
+  --footer: #062319;
+  --menu: #def0f0;
+  --text: #39716d;
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-footer: var(--footer);
+  --font-roboto: var(--font-roboto);
+}
+
+body {
+  /* background: var(--background);
+  color: var(--foreground); */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* b {
+  color: #39716d;
+}
+
+.specialist-bg {
+  background-image: url("./../../public/jpg/dr_profile.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.dr-pedro-bg {
+  /* background-image: url('https://i.pinimg.com/736x/9c/ca/7d/9cca7d3c2c060a7028dac247805f4305.jpg'); */
+  background-color: #c6e7e7;
+  background-size: cover;
+  background-position: right;
+}
+
+.dr-hands-bg {
+  background-image: url("./../../public/jpg/dr_hands.jpg");
+  background-size: cover;
+  background-position: right;
+}
+
+.dr-desc-bg {
+  /* background-image: url('https://i.pinimg.com/736x/9c/ca/7d/9cca7d3c2c060a7028dac247805f4305.jpg'); */
+  background-color: #c6e7e7;
+  background-size: cover;
+  background-position: right;
+}
+
+.dr-computer-bg {
+  background-image: url("./../../public/jpg/dr_computer.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.man-couch-bg {
+  background-image: url("./../../public/jpg/man_couch.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.man-cellphone-bg {
+  background-image: url("./../../public/jpg/man_cellphone.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.man-couch-bg .wrapper {
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
